@@ -6,6 +6,7 @@ local map = vim.keymap.set
 
 map("n", "<C-q>", "<ESC>:q<CR>")
 map("t", "<ESC><ESC>", "<C-\\><C-n>", { desc = "Exit terminal" })
+map("n", "<leader>h", "<cmd>nohlsearch<CR>", { desc = "No Highlight Search" })
 
 -- 插入模式下 Ctrl+← 跳到上一个词首并继续插入
 map("i", "<C-Left>", "<Esc>bi", { silent = true })
