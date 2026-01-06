@@ -30,3 +30,7 @@ end, { desc = "Insert MIT head license" })
 map("n", "<leader>Fu", function()
   filltext.insert_user_info()
 end, { desc = "Insert user info" })
+
+map("n", "<leader>E", function()
+  Snacks.explorer({ cwd = vim.fn.expand("%:p:h") })
+end, { desc = "Explorer (Current File Dir)" })
