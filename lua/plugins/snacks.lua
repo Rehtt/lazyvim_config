@@ -4,9 +4,8 @@ return {
     opts = {
       notifier = { enabled = true },
       image = {
-        -- 如果环境变量是 iTerm.app，则强制开启图片支持
-        enabled = os.getenv("TERM_PROGRAM") == "iTerm.app" or os.getenv("LC_TERMINAL") == "iTerm2",
-        force = true, -- 即使是在 tmux 中也尝试透传
+        enabled = true,
+        force = os.getenv("TERM_PROGRAM") == "iTerm.app" or os.getenv("LC_TERMINAL") == "iTerm2",
       },
       picker = {
         sources = {
