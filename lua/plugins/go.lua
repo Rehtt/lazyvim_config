@@ -7,6 +7,9 @@ return {
   },
   config = function()
     require("go").setup({
+      lsp_inlay_hints = {
+        enable = false, -- 显式设置为 false
+      },
       -- 核心建议：禁用 go.nvim 管理的 LSP，让 LazyVim 的 lspconfig 统一处理
       lsp_cfg = false,
       lsp_gofumpt = true, -- 使用 gofumpt 进行格式化
