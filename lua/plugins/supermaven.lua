@@ -8,7 +8,7 @@ return {
     keymaps = {
       accept_suggestion = "<C-a>", -- 自定义：按下 Ctrl+a 接受建议
       clear_suggestion = "<C-]>", -- 自定义：按下 Ctrl+] 清除建议
-      accept_word = "<C-j>", -- 自定义：按下 Ctrl+j 接受一个单词
+      accept_word = "<C-p>", -- 自定义：按下 Ctrl+p 接受一个单词
     },
   },
 }
