@@ -34,3 +34,5 @@ end, { desc = "Insert user info" })
 map("n", "<leader>E", function()
   Snacks.explorer({ cwd = vim.fn.expand("%:p:h") })
 end, { desc = "Explorer (Current File Dir)" })
+
+map("v", "<leader>fj", ":!jq .", { desc = "使用jq对选中的json进行格式化" })
